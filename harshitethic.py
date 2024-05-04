@@ -1,4 +1,4 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from datetime import datetime
 import json, os, string, sys, threading, logging, time, re, random
@@ -294,4 +294,4 @@ def interact(bot, update, botname, username, new):
 
 def error(bot, update):
     """Log Errors caused by Updates."""
-    logger.warning('Update "%s" caused error "%s
+    logger.warning('Update "%s" caused error "%s"')
